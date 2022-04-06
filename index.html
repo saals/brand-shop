@@ -1,19 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Brand of Luxurious Fashion</title>
 
-    <link rel="icon" href="./img/logo.svg" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Brand of Luxurious Fashion</title>
 
-    <link rel="stylesheet" href="./css/normalize.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
-  <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-  </body>
+  <link rel="icon" href="./img/logo.svg" />
+
+  <link rel="stylesheet" href="./css/normalize.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__wrap">
+      <div>
+        <a href="#" class="header__logo">
+          <img class="header__logo-icon" src="./img/logo.svg" alt="logo" width="44" height="38" />
+        </a>
+        <img src="./img/search.svg" alt="site search" width="26" height="27" />
+        <!-- сделать формой -->
+      </div>
+      <div>
+        <button class="header__burger">
+          <img class="header__burger-icon" src="./img/menu.svg" alt="open menu" width="32" height="23" />
+        </button>
+        <a href="#" class="header__user">
+          <img class="header__user-icon" src="./img/user.svg" alt="register or login" width="29" height="29" />
+        </a>
+        <a href="#" class="header__cart">
+          <img class="header__cart-icon" src="./img/cart.svg" alt="shopping cart" width="32" height="29" />
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="brand">
+      <div class="brand__image">
+        <img src="./img/brand.png" alt="man in a jacket" width="800" height="765">
+      </div>
+      <div class="brand__heading">
+        <h1 class="brand__title">the brand <span class="brand__subtitle">of luxurious <span>fashion</span></span></h1>
+      </div>
+    </section>
+  </main>
+
+  <footer></footer>
+</body>
+
 </html>

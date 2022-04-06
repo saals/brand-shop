@@ -4,7 +4,7 @@
 
   --userfont: "lato", sans-serif;
 
-  --container: 1140px;
+  --container: 1170px;
 }
 
 @font-face {
@@ -77,6 +77,79 @@ a {
 }
 
 .container {
-  width: var(--container);
+  max-width: var(--container);
   margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  background-color: var(--black);
+}
+
+.header__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 75px;
+}
+.header__logo {
+  margin: 0 40px 0 0;
+}
+.header__burger {
+  margin: 0 33px 0 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.header__burger-icon {
+}
+.header__user {
+  margin: 0 33px 0 0;
+}
+.header__user-icon {
+}
+.header__cart {
+}
+.header__cart-icon {
+}
+
+.brand {
+  display: flex;
+  background-color: #f1e4e6;
+}
+.brand__image {
+  width: 50%;
+  /* background-color: rgba(113, 103, 105, 0.08); */
+  background-color: #f4f3f3;
+}
+
+.brand__image > img {
+  display: block;
+  margin: 0 0 0 auto;
+}
+
+.brand__heading {
+  display: flex;
+  width: 50%;
+  margin: auto;
+}
+.brand__title {
+  max-width: 450px;
+  margin-left: 90px;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 58px;
+  color: var(--black);
+  text-transform: uppercase;
+}
+
+.brand__subtitle {
+  display: block;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+}
+
+.brand__subtitle > span {
+  color: var(--accent);
 }
