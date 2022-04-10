@@ -1,0 +1,44 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: $userfont;
+  font-style: normal;
+  font-weight: 400;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+.container {
+  max-width: $container;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.button {
+  width: 212px;
+  padding: 15px;
+  font-size: 16px;
+  line-height: 19px;
+  color: $accent;
+  text-transform: capitalize;
+  background: transparent;
+  border: 1px solid $accent;
+  cursor: pointer;
+}

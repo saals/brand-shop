@@ -1,0 +1,58 @@
+.offers {
+  margin-bottom: 67px;
+}
+.offers__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.offers__item {
+  width: 31.6%;
+  min-height: 260px;
+  margin: 0 0 30px;
+}
+.offers__item:last-child {
+  width: 100%;
+  min-height: 180px;
+}
+.offers__item_1 {
+  background: rgba(33, 22, 22, 0.7) url(../img/for-fomen.jpg) center top no-repeat;
+  background-size: cover;
+}
+.offers__item_2 {
+  background: rgba(33, 22, 22, 0.7) url(../img/for-men.jpg) center top no-repeat;
+  background-size: cover;
+}
+.offers__item_3 {
+  background: rgba(33, 22, 22, 0.7) url(../img/for-kids.jpg) center top no-repeat;
+  background-size: cover;
+}
+.offers__item_4 {
+  background: rgba(33, 22, 22, 0.7) url(../img/accesories.jpg) center top no-repeat;
+  background-size: cover;
+}
+.offers__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: inherit;
+  padding: 30px;
+  text-transform: uppercase;
+}
+.offers__subtitle {
+  margin: 0;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+}
+.offers__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: $accent;
+}

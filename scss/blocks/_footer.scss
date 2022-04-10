@@ -1,0 +1,37 @@
+.footer {
+  min-height: 79px;
+  background: $black;
+}
+.footer__wrap {
+  display: flex;
+  align-items: center;
+  min-height: inherit;
+}
+.copyright {
+  margin: 0 auto 0 0;
+  font-size: 16px;
+  line-height: 19px;
+  color: #fbfbfb;
+}
+.social {
+  margin: 0;
+}
+.social__link:not(:last-child) {
+  margin-right: 3px;
+}
+.social__icon {
+  transition: 5s ease-out;
+}
+.social__icon path:last-child {
+  fill: #000;
+}
+.social__icon path:first-child {
+  fill: #fff;
+  transition: 0.5s ease-out;
+}
+.social__icon:hover path:last-child {
+  fill: #fff;
+}
+.social__icon:hover path:first-child {
+  fill: $accent;
+}
