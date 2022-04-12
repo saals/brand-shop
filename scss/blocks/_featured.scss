@@ -1,0 +1,109 @@
+.featured {
+  margin-bottom: 95px;
+}
+.featured__title {
+  margin: 0 0 6px;
+  font-size: 30px;
+  line-height: 36px;
+  color: $black;
+  text-align: center;
+  text-transform: capitalize;
+}
+.featured__subtitle {
+  margin: 0 0 48px;
+  font-size: 14px;
+  line-height: 17px;
+  color: #9f9f9f;
+  text-align: center;
+}
+.featured__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 0 14px;
+  padding: 0;
+  list-style: none;
+}
+.featured__item {
+  width: 31.6%;
+  margin-bottom: 30px;
+}
+.card {
+  /* width: 360px; */
+  background: #f8f8f8;
+}
+.card__wrp {
+  position: relative;
+}
+.card__button-to-cart {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 13px 16px 13px 45px;
+  font-size: 14px;
+  line-height: 17px;
+  color: #fff;
+  background: transparent url(../img/cart.svg) no-repeat left 12px center;
+  border: 1px solid #fff;
+  display: none;
+}
+.card__button-to-cart:active {
+  box-shadow: inset 0 0 10px #fff;
+}
+.card__wrp::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(58, 56, 56, 0.86);
+  display: none;
+}
+.card:hover .card__wrp::before {
+  display: block;
+}
+.card:hover .card__button-to-cart {
+  display: block;
+  cursor: pointer;
+}
+.card__img {
+  display: block;
+}
+.card__text {
+  padding: 25px 18px 20px;
+}
+.card__title {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 13px;
+  line-height: 16px;
+  color: #000000;
+  text-transform: uppercase;
+}
+.card__description {
+  margin-top: 0;
+  margin-bottom: 18px;
+  font-size: 14px;
+  line-height: 17px;
+  color: #5d5d5d;
+}
+.card__price {
+  font-size: 16px;
+  line-height: 19px;
+  color: $accent;
+}
+
+.featured__button {
+  display: block;
+  margin: 0 auto;
+  transition: 0.2s ease-out;
+}
+.featured__button:hover {
+  color: #fff;
+  background: $accent;
+}
+.featured__button:active {
+  color: #fff;
+  background: $accent;
+  box-shadow: inset 0px 0px 5px #222;
+}
